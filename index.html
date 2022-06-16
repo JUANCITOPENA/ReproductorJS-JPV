@@ -8,14 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reproductor JS</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+	<script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
 </head>
 
 <body>
+
     <div class="container">
+     
+        <h1>🎵JPV Music</h1>
+        <img src="images/radio1.gif" alt="radio"> 
+
         <button onclick="playVid()" type="button">Play Music</button>
-        <button onclick="pauseVid()" type="button">Pause Music</button><br>
-        <h1>JPV Music</h1>
-        <img src="images/radio1.gif" alt="">
+        <button onclick="pauseVid()" type="button">Pause Music</button> 
+
+
         <script>
             function cambiarTrack(track) {
                 var path = track.getAttribute("path")
@@ -50,6 +57,8 @@
             }
         </script>
 
+
+
         <div id="reproductorBox">
             <select id="selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
                 
@@ -61,26 +70,35 @@
         <option path="lista_music/Sech-Feat.-Ozuna-–-Si-Te-Vas.mp3">Si Te vas</option>
         <option path="lista_music/Natti-Natasha-La-Mejor-Version-De-Mi.mp3">La Mejor Version de Mi</option> 
         <option path="lista_music/Wisin-y-Yandel-Feat-Sech-–-Ganas-de-Ti.mp3">Ganas de Ti</option>
+        <option path="lista_music/IV ME.mp3">IV Me</option>
         </div>
-    
-    <script>
-        cargarReproductor();
-    </script>
+     
+        
+
+
+<script>
+    cargarReproductor();
+</script>
   
-  <script> 
-var vid = document.getElementById("reproductor"); 
+ 
+<script>
+    var vid = document.getElementById("reproductor");
 
-function playVid() { 
-  vid.play(); 
-} 
+    function playVid() {
+        vid.play();
+    }
 
-function pauseVid() { 
-  vid.pause(); 
-} 
-</script> 
+    function pauseVid() {
+        vid.pause();
+    }
+
+
+</script>
+
+
 
 </div>
-  
+
 
 </body>
 

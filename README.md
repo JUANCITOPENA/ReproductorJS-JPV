@@ -3,4 +3,4 @@ Reproductor de Audio realizado con HTML, CSS y Javascript, implementando un dise
 
 ![](reproductorjpv.png)
 
-URL: https://juancitopeña.com/accesojpv/
+URL: https://juancitopena.github.io/ReproductorJS-JPV/
